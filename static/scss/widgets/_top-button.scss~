@@ -1,0 +1,13 @@
+/*-------------------------------*/
+/*   top-button.scss             */
+/*-------------------------------*/
+
+
+.go--top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: $Frame-Color-Dk;
+    text-align: center;
+    font-size: 1em;
+}
