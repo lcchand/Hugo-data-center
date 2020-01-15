@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-  {% include head.html %}
+  { partial head.html . }
 
   <body>
 
-    {% include building_header.html %}
+    { partial building_header.html . }
 
     <main>
 
-      {% include building_sidebar.html %}
+      { partial building_sidebar.html . }
 
-      {{ content }}
+      {{ .Content }}
 
     </main>
 
-    {% include footer.html %}
+    { partial footer.html . }
 
-    {% include load_scripts.html %}
+    { partial load_scripts.html . }
 
   </body>
 </html>

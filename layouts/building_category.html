@@ -1,41 +1,41 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
+  { partial head.html . }
  
   <body>
 
-    {% include building_header.html %}
+    { partial building_header.html . }
 
     <main>
 
-      {% include building_sidebar.html %}
+      { partial building_sidebar.html . }
 
       <section>
-	{% include category_1.html %}
+	{ partial category_1.html . }
 	
 	<section id="content1">
 
-	  {{ content }}
+	  {{ .Content }}
 
 	</section>
 	<!-- End of Issue content -->
 
 
-	{% include category_2.html %}
+	{ partial category_2.html . }
 
-	{% include category_3-Building.html %}
+	{ partial category_3-Building.html . }
 
       </section>
 
       <!-- New Top Button -->
-      {% include gotop_button.html %}
+      { partial gotop_button.html . }
       <!-- End of New Top Button -->
 
     </main>
 
-    {% include footer.html %}
+    { partial footer.html . }
 
-    {% include load_scripts.html %}
+    { partial load_scripts.html . }
     
   </body>
 </html>

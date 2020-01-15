@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
+  {% partial head.html . %}
   
   <body>
 
-    {% include support_header.html %}
+    {% partial support_header.html . %}
 
     <main>
 
-      {% include support_sidebar.html %}
+      {% partial support_sidebar.html . %}
 
       <section>
-	{% include category_1-ah.html %}
+	{% partial category_1-ah.html . %}
 	
 	<section id="content1">
 
@@ -21,19 +21,19 @@
 	<!-- End of Issue content -->
 
 
-	{% include category_2.html %}
+	{% partial category_2.html . %}
 
-	{% include category_ah.html %}
+	{% partial category_ah.html . %}
 
-	{% include category_3.html %}
+	{% partial category_3.html . %}
 
       </section>
 
     </main>
 
-    {% include footer.html %}
+    {% partial footer.html . %}
 
-    {% include load_scripts.html %}
+    {% partial load_scripts.html . %}
     
   </body>
 </html>
