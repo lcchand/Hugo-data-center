@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-  { partial head.html . }
+  { partial "head.html" . }
 
   <body>
 
-    { partial building_header.html . }
+    { partial "building_header.html" . }
 
     <main>
 
-      { partial building_sidebar.html . }
+      { partial "building_sidebar.html" . }
 
       {{ .Content }}
 
     </main>
 
-    { partial footer.html . }
+    { partial "footer.html" . }
 
-    { partial load_scripts.html . }
+    { partial "load_scripts.html" . }
 
   </body>
 </html>

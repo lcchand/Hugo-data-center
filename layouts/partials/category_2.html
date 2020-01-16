@@ -11,15 +11,15 @@
     </thead>
     <tfoot>
       <tr>
-	<td colspan="3">{{ page.support_date }}</td>
+	<td colspan="3">{{ $.Page.support_date }}</td>
       </tr>
     </tfoot>
     <tbody>
-      {% for bizsupport in page.bh_support %}
+      {% for $.Page.Params.bizsupport in $.Page.bh_support %}
       <tr>
-        <td>{{ bizsupport.snow_group }}</td>
-        <td>{{ bizsupport.id }}</td>
-        <td>{{ bizsupport.amcom }}</td>
+        <td>{{ $.Page.Params.bizsupport.snow_group }}</td>
+        <td>{{ $.Page.Params.bizsupport.id }}</td>
+        <td>{{ $.Page.Params.bizsupport.amcom }}</td>
       </tr>
       {% endfor %}
     </tbody>

@@ -11,11 +11,11 @@
     </thead>
     <tfoot>
       <tr>
-	<td colspan="3">{{ page.support_date }}</td>
+	<td colspan="3">{{ $.Page.support_date }}</td>
       </tr>
     </tfoot>
     <tbody>
-      {% for ahsupport in page.ah_support %}
+      {% for ahsupport in $.Page.ah_support %}
       <tr>
         <td>{{ ahsupport.snow_group }}</td>
         <td>{{ ahsupport.id }}</td>

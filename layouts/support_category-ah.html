@@ -4,14 +4,14 @@
   
   <body>
 
-    {% partial support_header.html . %}
+    {% partial "support_header.html" . %}
 
     <main>
 
-      {% partial support_sidebar.html . %}
+      {% partial "support_sidebar.html" . %}
 
       <section>
-	{% partial category_1-ah.html . %}
+	{% partial "category_1-ah.html" . %}
 	
 	<section id="content1">
 
@@ -21,19 +21,19 @@
 	<!-- End of Issue content -->
 
 
-	{% partial category_2.html . %}
+	{% partial "category_2.html" . %}
 
-	{% partial category_ah.html . %}
+	{% partial "category_ah.html" . %}
 
-	{% partial category_3.html . %}
+	{% partial "category_3.html" . %}
 
       </section>
 
     </main>
 
-    {% partial footer.html . %}
+    {% partial "footer.html" . %}
 
-    {% partial load_scripts.html . %}
+    {% partial "load_scripts.html" . %}
     
   </body>
 </html>
