@@ -10,17 +10,17 @@
 
   <body>
 
-    {% partial "systems_header.html" . %}
+    {{ partial "systems_header.html" . }}
 
     <main>
 
-      {% partial "systems_sidebar.html" . %}
+      {{ partial "systems_sidebar.html" . }}
 
-      {{ content }}
+      {{ .Content }}
 
     </main>
 
-    {% partial "footer.html" . %}
+    {{ partial "footer.html" . }}
 
     <script src="../js/accordion-sidebar.js"></script>
     <script src="../js/hamburger.js"></script>

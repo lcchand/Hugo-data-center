@@ -11,17 +11,17 @@
     </thead>
     <tfoot>
       <tr>
-	<td colspan="3">{{ $.Page.support_date }}</td>
+	<td colspan="3">{{ .Param.support_date }}</td>
       </tr>
     </tfoot>
     <tbody>
-      {% for ahsupport in $.Page.ah_support %}
+      {{ range .Site.ah_support }}
       <tr>
-        <td>{{ ahsupport.snow_group }}</td>
-        <td>{{ ahsupport.id }}</td>
-        <td>{{ ahsupport.amcom }}</td>
+        <td>{{ .ahsupport.snow_group }}</td>
+        <td>{{ .ahsupport.id }}</td>
+        <td>{{ .ahsupport.amcom }}</td>
       </tr>
-      {% endfor %}
+      {{ end }}
     </tbody>
   </table>
 </section>

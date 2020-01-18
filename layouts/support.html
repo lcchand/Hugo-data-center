@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="en">
-  { partial "head.html" . }
+  {{ partial "head.html" . }}
 
   <body>
 
-    { partial "support_header.html" . }
+    {{ partial "support_header.html" . }}
 
     <main>
 
-      { partial "support_sidebar.html" . }
+      {{ partial "support_sidebar.html" . }}
 
       {{ .Content }}
 
     </main>
 
-    { partial "footer.html" . }
+    {{ partial "footer.html" . }}
 
-    { partial "load_scripts.html" . }
+    {{ partial "load_scripts.html" . }}
 
   </body>
 </html>

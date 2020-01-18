@@ -3,7 +3,7 @@ title: Home
 ---
 <!doctype html>
 <html lang="en" class="body--homepage">
-  {% include head-index.html %}
+  {{ partial "head-index.html" . }}
 
   <body>
     <header class="header--primary">
@@ -49,7 +49,7 @@ title: Home
 
     </main>
 
-    {% include footer.html %}
+    {{ partial "footer.html" . }}
 
     <!-- {% include load_scripts.html %} -->
 

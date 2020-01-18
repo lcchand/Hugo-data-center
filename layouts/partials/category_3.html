@@ -1,10 +1,10 @@
 <!-- Beginning of Reference content -->
 <section id="content3">
   <dl>
-    {% for item in site.data.support_test_reference %}
-    <dt>{{ item.term }}</dt>
-    <dd>{{ item.definition }}</dd>
-    {% endfor %}
+    {{ range .Site.data.support_test_reference }}
+    <dt>{{ .item.term }}</dt>
+    <dd>{{ .item.definition }}</dd>
+    {{ end }}
   </dl>
 
   <p>
